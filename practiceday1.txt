@@ -1,0 +1,56 @@
+"DataTypes"
+
+print("Hello!")
+print(false);
+print(true);
+print(100);
+print(10.2);
+print("hello world");
+print('My name is Maham')
+
+"Variables"
+
+local myName= "Maham"
+print(myName)
+local number= "1000"
+print(number)
+print(number)
+print(number)
+print(myName)
+print(myName)
+
+"Properties"
+
+local baseplate = game.Workspace.Baseplate
+
+baseplate.Transparency = 0.25
+baseplate.Material = "Brick"
+baseplate.CastShadow= false
+
+local sphere= game.Workspace.sphere
+
+
+sphere.BrickColor= Plum
+sphere.Material= Glass
+sphere.Transparency= 2
+
+"Functions"
+
+local function abc()
+	print('a')
+	print('b')
+	print('c')
+end
+abc()
+abc()
+abc()
+
+local sphere = game.Workspace.sphere
+
+local function spherefunc()
+
+	sphere.BrickColor= Black
+
+end
+
+spherefunc()
