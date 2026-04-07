@@ -1,0 +1,96 @@
+*MATHS*
+local add = 2 + 2
+local sub = 100 - 1
+local mul = 10 * 20
+local div = 50 / 5
+local mod = 10 % 3
+local expo = 2 ^ 3
+local flo = 10 // 3
+
+print(add)
+print(sub)
+print(mul)
+print(div)
+print(mod)
+print(expo)
+print(flo)
+
+*Parameters*
+local function add(num1, num2)
+	number = num1 + num2
+	print(number)
+end
+
+
+local function add3(num1, num2, num3)
+local number3 = num1 + num2 - num3
+return number3
+end
+
+local printNumber3 = add3(5,5,2)
+
+add(10, 2)
+print(printNumber3)
+
+
+local function maths(num1, num2, num3, num4)
+	local solve= (num1 * num2 + num3 / num4)
+	return solve
+end
+
+local printSolve= maths(5,2,5,2)
+
+print(printSolve)
+
+local function sub(num1, num2)
+local	result = num1 - num2
+	return result
+end
+
+local printResult= sub(50,10)
+print(printResult)
+
+*ifStatements*
+
+if 4 + 2 == 6 then
+	print("4 + 2 equals to 6")
+else 
+	print("solution is incorrect")
+end
+
+if 4 + 2 - 2 == 4 then
+	print("it is correct")
+else 
+	print("it is incorrect")
+end
+
+if 10 * 5 == 50 then
+	print ("5 multiples of 10 equals 50")
+elseif 10 * 2 == 40 then
+	print ("2 multiples of 10 equals 20")
+elseif 10 * 50 == 400 then
+	print("50 multiples of 10 equals 500")
+else 
+	print("none of the corrections are right")
+end
+
+local function logics(num1, num2)
+	local result = num1 * num2
+	
+if result == 50 then
+		print("answer is 50")
+elseif result == 30 then
+		print("result is 36")
+elseif result == 81 then
+		print("answer is 81")
+else 
+	    print("none of the answers are right")
+		
+	end
+	
+end
+
+logics(2,25)
+logics(9,9)
+logics(5,10)
+
