@@ -1,0 +1,123 @@
+--Loops--
+
+for myloop= 5,1,-1 do
+	print("hello1")
+	print("hello2")
+end
+
+local myLoop = 1
+
+while myLoop <= 1 do
+	print ("hello hello juliet")
+	print("hey jane!")
+	myLoop = myLoop + 1
+end 
+
+
+local myBaseplate = game.Workspace.Baseplate
+
+for baseLoop = 1 , 3, 1 do
+	myBaseplate.BrickColor = BrickColor.new("Bright red")
+	task.wait(0.5)
+	myBaseplate.BrickColor = BrickColor.new("Bright blue")
+	task.wait(0.5)
+	myBaseplate.BrickColor = BrickColor.new("Bright yellow")
+	task.wait(0.5)
+	myBaseplate.BrickColor = BrickColor.new("Bright green")
+	task.wait(0.5)
+	myBaseplate.BrickColor = BrickColor.new("Bright orange")
+	task.wait(0.5)
+	myBaseplate.BrickColor = BrickColor.new("Bright purple")
+	task.wait(0.5)
+end
+
+
+local myBaseplate = game.Workspace.Baseplate
+
+local baseLoop = 10 
+while baseLoop > 1 do
+	myBaseplate.BrickColor = BrickColor.new("Bright red")
+	task.wait(0.5)
+	myBaseplate.BrickColor = BrickColor.new("Bright blue")
+	task.wait(0.5)
+	myBaseplate.BrickColor = BrickColor.new("Bright yellow")
+	task.wait(0.5)
+	baseLoop = baseLoop + 1
+end
+
+
+for parentLoop = 1, 3, 1 do
+	print("hey Jane")
+	print("hello Juliet!")
+	
+	for nestedLoop = 1, 3, 1 do
+		print("your early!")
+		print("your life's works been stolen")
+	end
+		
+end
+
+
+local parentWhile = 1
+
+while parentWhile <= 2 do
+	print("hello hello Juliet!")
+	print("your life's work been dirtied")
+	
+	local nestedWhile = 1
+while nestedWhile <= 3 do
+		print("by the fool's who adore you!")
+		print("who adore youuuu!")
+nestedWhile = nestedWhile + 1
+	end	
+	parentWhile = parentWhile + 1
+end
+
+--Break Statements--
+
+for i = 1 , 100000 do
+	print("print it only 200 times")
+	if i == 200 then
+		break
+	end
+end
+
+local i = 1
+
+while i <= 1000000 do
+	print("print it 100 times")
+	if i == 100 then
+		break
+	end
+	i = i + 1
+end
+
+for i = 1, 10000 do
+	print("hello jane!")
+	print("Hello Juliet!")
+	if i == 5 then
+		break
+	end
+	for nestedI = 1, 50000 do
+		print("hello hello hello")
+		print("hello hello hello")
+		print("hello hello hello")
+		
+		if nestedI == 300 then
+			break
+		end
+	end
+end
+
+--Continue Statements--
+
+for i = 1, 10000 do
+	if i == 10 then
+		print("print it 10 times")
+		continue
+	end
+	if i == 200 then
+		break
+	end
+	print("printed 200 times")
+end
