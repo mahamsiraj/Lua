@@ -1,0 +1,52 @@
+--Events--
+--Player Event--
+
+game.Players.PlayerAdded:Connect(function(Player)
+	print("a new player has entered")
+	print(Player.Name)
+	
+end
+)
+local function PlayerAdded(Player)
+	
+end
+
+--Touch Event--
+
+local touchPart = game.Workspace.TouchPart
+
+partIsTouched = false
+
+touchPart.Touched:Connect(function(otherPart)
+	if partIsTouched == false then
+		partIsTouched = true 
+		print(otherPart.Name)
+		task.wait(1)
+		partIsTouched = false
+	end
+	
+	if  touchPart == partIsTouched then
+		touchPart.Color= Color3(163,162,40)
+	end
+	
+end)
+
+
+local touchPart = game.Workspace.TouchPart
+local loop = 10
+touchPart.Touched:Connect(function(otherPart)
+while loop >= 5 do
+	touchPart.Color= Color3.fromRGB(255, 0, 0)
+	task.wait(0.5)
+	touchPart.Color= Color3.fromRGB(48, 51, 255)
+	task.wait(0.5)
+	touchPart.Color= Color3.fromRGB(221, 120, 255)
+	task.wait(0.5)
+	touchPart.Color= Color3.fromRGB(255, 140, 140)
+	task.wait(0.5)
+	loop = loop + 1
+	end
+	end)
+
+
+
