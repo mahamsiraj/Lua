@@ -1,0 +1,33 @@
+--INSTANCES--
+
+local newPart= Instance.new("Part")
+newPart.Name= "PlayerPart"
+
+newPart.Parent= workspace
+
+--PLAYER STATS USING INSTANCES--
+
+game.Players.PlayerAdded:Connect(function(player)
+	local leaderstats = Instance.new("Folder")
+	leaderstats.Name= "leaderstats"
+	leaderstats.Parent= player
+	local coins = Instance.new("IntValue")
+	coins.Name = "Coins"
+	coins.Value = 0
+	coins.Parent = leaderstats
+	
+	
+	local score= Instance.new("IntValue")
+	score.Name= "Scores"
+	score.Parent= leaderstats
+	score.Value= 0
+	
+	while true do
+		score.Value = score.value + 1
+		task.wait(1.5)
+	end
+	
+end)
+
+
+
