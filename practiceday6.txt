@@ -1,0 +1,45 @@
+--FindFirstChild & WaitForChild--
+
+local model = script.Parent
+
+local part1 = model:FindFirstChild("part1")
+
+if part1 then
+	part1.Brickcolor= BrickColor.new("Lavender")
+end
+
+local part3= model:WaitForChild("Part3")
+if part3 then
+	print("part3 has been detected!")
+end
+
+--KILL BRICK--
+
+local KillBrick = script.Parent
+
+KillBrick.Touched:Connect(function(otherpart)
+	
+	local humanoid = otherpart.Parent:FindFirstChild("Humanoid")
+	if humanoid then
+		humanoid.Health= 0
+	end
+	end)
+
+--RANDOM NUMBER--
+
+local RandomNumber = math.random(1, 100)
+print(RandomNumber)
+
+--BASEPLATE COLOR CHANGE--
+local baseplate = game.Workspace.Baseplate
+
+while true do
+	
+	local redValue = math.random(0,255)
+	local greenValue = math.random(0,255)
+	local blueValue = math.random(0,255)
+	
+	baseplate.Color= Color3.fromRGB(redValue,greenValue,blueValue)
+	task.wait(1)
+end
+
